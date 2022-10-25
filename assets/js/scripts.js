@@ -22,7 +22,7 @@ const alpineApp = () => {
                 return false
             }
         
-            this.todo.id = uuidv4()
+            this.todo.id = Math.random().toString().split(".")[1]
             this.todo.createdAt = new Date();
 
             this._todos.push({ ...this.todo })
